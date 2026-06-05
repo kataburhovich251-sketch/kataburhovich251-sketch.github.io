@@ -115,7 +115,26 @@
             header h1 { font-size: 32px; }
             section h2 { font-size: 24px; }
             section { margin: 20px; }
+         /* АНИМАЦИЯ ПОЯВЛЕНИЯ */
+        section, header, div[style*="text-align: center"] {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 0.6s ease forwards;
         }
+
+        header { animation-delay: 0s; }
+        div[style*="text-align: center"] { animation-delay: 0.1s; }
+        section:nth-of-type(1) { animation-delay: 0.2s; }
+        section:nth-of-type(2) { animation-delay: 0.3s; }
+        section:nth-of-type(3) { animation-delay: 0.4s; }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    
     </style>
 </head>
 <body>
@@ -174,9 +193,7 @@
         <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" width="32">
     </a>
     <a href="https://github.com/ваш-логин" target="_blank" style="display: inline-block; margin: 0 10px; text-decoration: none;">
-        <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" width="32">
-    </a>
-</div>
+        
 
     <!-- ПОДВАЛ -->
     <footer>
