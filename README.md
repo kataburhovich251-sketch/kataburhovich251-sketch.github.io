@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Портфолио - Екатерина Бурхович.</title>
+    <title>Портфолио - Екатерина Бурхович</title>
     <style>
         * {
             margin: 0;
@@ -18,17 +18,14 @@
             background: #f4f4f4;
         }
 
-        header {
+        .hero {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
             text-align: center;
-            padding: 60px 20px 40px 20px;
+            padding: 40px 20px 60px 20px;
         }
 
-        /* Стили для фото */
         .avatar {
-            text-align: center;
-            margin-top: -50px;
             margin-bottom: 20px;
         }
 
@@ -41,12 +38,12 @@
             box-shadow: 0 5px 15px rgba(0,0,0,0.2);
         }
 
-        header h1 {
+        .hero h1 {
             font-size: 48px;
             margin-bottom: 10px;
         }
 
-        header p {
+        .hero p {
             font-size: 20px;
             opacity: 0.9;
         }
@@ -121,7 +118,7 @@
         }
 
         @media (max-width: 768px) {
-            header h1 { font-size: 32px; }
+            .hero h1 { font-size: 32px; }
             section h2 { font-size: 24px; }
             section { margin: 20px; }
             .avatar img { width: 100px; height: 100px; }
@@ -130,25 +127,20 @@
 </head>
 <body>
 
-    <!-- ФОТО (ДОБАВЛЕНО ОБРАТНО) -->
-    <div class="avatar">
-        <img src="foto.jpg" alt="Екатерина Бурхович.">
+    <div class="hero">
+        <div class="avatar">
+            <img src="foto.jpg" alt="Екатерина Бурхович">
+        </div>
+        <h1>Екатерина Бурхович</h1>
+        <p>Веб-разработчик | Создаю красивые и удобные сайты</p>
     </div>
 
-    <!-- ШАПКА САЙТА -->
-    <header>
-        <h1>Екатерина Бeh[jdbx.</h1>
-        <p>Веб-разработчик | Создаю красивые и удобные сайты</p>
-    </header>
-
-    <!-- РАЗДЕЛ "ОБО МНЕ" -->
     <section>
         <h2>Обо мне</h2>
         <p>Привет! Меня зовут Катя. Я создаю современные сайты, которые работают быстро и красиво выглядят на любых устройствах.</p>
         <p>Постоянно учусь новому и люблю решать интересные задачи. Сделаю ваш проект качественно и с душой.</p>
     </section>
 
-    <!-- РАЗДЕЛ "МОИ РАБОТЫ" -->
     <section>
         <h2>Мои работы</h2>
         <div class="works-container">
@@ -170,15 +162,13 @@
         </div>
     </section>
 
-    <!-- РАЗДЕЛ "КОНТАКТЫ" -->
     <section>
         <h2>Свяжитесь со мной</h2>
-        <div class="contact-item">📧 Email: kataburhovich@example.com</div>
-        <div class="contact-item">💬 Telegram: @kataburhovich</div>
+        <div class="contact-item">📧 Email: kataburhovich251@gmail.com</div>
+        <div class="contact-item">💬 Telegram: @burkhovich</div>
         <div class="contact-item">🐙 GitHub: github.com/kataburhovich251</div>
     </section>
 
-    <!-- ПОДВАЛ -->
     <footer>
         <p>© 2026 Екатерина Б. Сделано с ❤️</p>
     </footer>
