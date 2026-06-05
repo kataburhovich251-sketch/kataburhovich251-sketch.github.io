@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Портфолио - Екатерина Бурхович</title>
+    <title>Портфолио - Екатерина Б.</title>
     <style>
+        /* ВСЕ СТИЛИ CSS ТОЛЬКО ЗДЕСЬ, ВНУТРИ ТЕГА STYLE */
         * {
             margin: 0;
             padding: 0;
@@ -52,13 +53,13 @@
             padding-left: 15px;
         }
 
-        section:nth-of-type(2) > div {
+        .works-container {
             display: flex;
             gap: 20px;
             flex-wrap: wrap;
         }
 
-        section:nth-of-type(2) > div > div {
+        .work-card {
             background: #f9f9f9;
             padding: 20px;
             border-radius: 10px;
@@ -67,17 +68,17 @@
             transition: transform 0.3s;
         }
 
-        section:nth-of-type(2) > div > div:hover {
+        .work-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 10px 20px rgba(0,0,0,0.1);
         }
 
-        section:nth-of-type(2) h3 {
+        .work-card h3 {
             color: #764ba2;
             margin-bottom: 10px;
         }
 
-        section a {
+        .work-card a {
             display: inline-block;
             margin-top: 10px;
             color: #667eea;
@@ -85,11 +86,11 @@
             font-weight: bold;
         }
 
-        section a:hover {
+        .work-card a:hover {
             text-decoration: underline;
         }
 
-        section:last-of-type p {
+        .contact-item {
             background: #f0f0f0;
             padding: 10px;
             margin: 10px 0;
@@ -109,59 +110,38 @@
             section h2 { font-size: 24px; }
             section { margin: 20px; }
         }
-
-        /* АНИМАЦИЯ ПОЯВЛЕНИЯ */
-        section, header, div[style*="text-align: center"] {
-            opacity: 0;
-            transform: translateY(30px);
-            animation: fadeInUp 0.6s ease forwards;
-        }
-
-        header { animation-delay: 0s; }
-        div[style*="text-align: center"] { animation-delay: 0.1s; }
-        section:nth-of-type(1) { animation-delay: 0.2s; }
-        section:nth-of-type(2) { animation-delay: 0.3s; }
-        section:nth-of-type(3) { animation-delay: 0.4s; }
-
-        @keyframes fadeInUp {
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
     </style>
 </head>
 <body>
 
+    <!-- ШАПКА САЙТА -->
     <header>
-        <h1>Екатерина Бурхович</h1>
-        <p>Веб-разработчик | Дизайнер | Создаю красивые сайты</p>
+        <h1>Екатерина Б.</h1>
+        <p>Веб-разработчик | Создаю красивые и удобные сайты</p>
     </header>
 
-    <div style="text-align: center; margin-top: -30px;">
-        <img src="foto.jpg" alt="Моё фото" style="width: 150px; height: 150px; border-radius: 50%; border: 4px solid white; object-fit: cover;">
-    </div>
-
+    <!-- РАЗДЕЛ "ОБО МНЕ" -->
     <section>
         <h2>Обо мне</h2>
         <p>Привет! Меня зовут Катя. Я создаю современные сайты, которые работают быстро и красиво выглядят на любых устройствах.</p>
-        <p>Люблю учиться новому и решать сложные задачи.</p>
+        <p>Постоянно учусь новому и люблю решать интересные задачи. Сделаю ваш проект качественно и с душой.</p>
     </section>
 
+    <!-- РАЗДЕЛ "МОИ РАБОТЫ" -->
     <section>
         <h2>Мои работы</h2>
-        <div>
-            <div>
+        <div class="works-container">
+            <div class="work-card">
                 <h3>Сайт для кофейни</h3>
                 <p>Красивый сайт с меню, картой и онлайн-заказом.</p>
                 <a href="#">Смотреть →</a>
             </div>
-            <div>
+            <div class="work-card">
                 <h3>Лендинг фитнес-клуба</h3>
                 <p>Продающий сайт с формой записи на тренировку.</p>
                 <a href="#">Смотреть →</a>
             </div>
-            <div>
+            <div class="work-card">
                 <h3>Блог путешественника</h3>
                 <p>Сайт со статьями, фотографиями и картой маршрутов.</p>
                 <a href="#">Смотреть →</a>
@@ -169,14 +149,17 @@
         </div>
     </section>
 
+    <!-- РАЗДЕЛ "КОНТАКТЫ" -->
     <section>
         <h2>Свяжитесь со мной</h2>
-        <p>📧 Email: <a href="mailto:kataburhovich251@gmail.com">kataburhovich251@gmail.com</a></p>
-        <p>📱 Telegram: <a href="https://t.me/vidast1" target="_blank">@vidast1</a></p>
+        <div class="contact-item">📧 Email: kataburhovich@example.com</div>
+        <div class="contact-item">💬 Telegram: @kataburhovich</div>
+        <div class="contact-item">🐙 GitHub: github.com/kataburhovich251</div>
     </section>
 
+    <!-- ПОДВАЛ -->
     <footer>
-        <p>© 2026 Екатерина Бурхович. Сделано с ❤️</p>
+        <p>© 2026 Екатерина Б. Сделано с ❤️</p>
     </footer>
 
 </body>
