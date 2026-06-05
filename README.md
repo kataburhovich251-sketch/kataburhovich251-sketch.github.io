@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Портфолио - Екатерина Б.</title>
+    <title>Портфолио - Екатерина Бурхович.</title>
     <style>
         * {
             margin: 0;
@@ -132,12 +132,12 @@
 
     <!-- ФОТО (ДОБАВЛЕНО ОБРАТНО) -->
     <div class="avatar">
-        <img src="фото.jpg" alt="Екатерина Б.">
+        <img src="foto.jpg" alt="Екатерина Бурхович.">
     </div>
 
     <!-- ШАПКА САЙТА -->
     <header>
-        <h1>Екатерина Б.</h1>
+        <h1>Екатерина Бeh[jdbx.</h1>
         <p>Веб-разработчик | Создаю красивые и удобные сайты</p>
     </header>
 
