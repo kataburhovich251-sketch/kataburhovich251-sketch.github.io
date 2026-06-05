@@ -165,7 +165,18 @@
     <h2>Свяжитесь со мной</h2>
     <p>📧 Email: <a href="mailto:kataburhovich251@gmail.com">kataburhovich251@gmail.com</a></p>
     <p>📱 Telegram: <a href="https://t.me/vidast1" target="_blank">@vidast1</a></p>
-</section>
+</section> 
+<div style="text-align: center; margin-top: 20px;">
+    <a href="https://t.me/vidast1" target="_blank" style="display: inline-block; margin: 0 10px; text-decoration: none;">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" width="32" style="border-radius: 50%;">
+    </a>
+    <a href="mailto:kate@example.com" style="display: inline-block; margin: 0 10px; text-decoration: none;">
+        <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" width="32">
+    </a>
+    <a href="https://github.com/ваш-логин" target="_blank" style="display: inline-block; margin: 0 10px; text-decoration: none;">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" width="32">
+    </a>
+</div>
 
     <!-- ПОДВАЛ -->
     <footer>
