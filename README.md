@@ -161,12 +161,11 @@
     </section>
 
     <!-- РАЗДЕЛ "КОНТАКТЫ" (исправлено на ваши данные) -->
-    <section>
-        <h2>Свяжитесь со мной</h2>
-        <p>Email: kate@example.com</p>
-        <p>Telegram: @vidast1</p>
-       
-    </section>
+  <section>
+    <h2>Свяжитесь со мной</h2>
+    <p>📧 Email: <a href="mailto:kataburhovich251@gmail.com">kataburhovich251@gmail.com</a></p>
+    <p>📱 Telegram: <a href="https://t.me/vidast1" target="_blank">@vidast1</a></p>
+</section>
 
     <!-- ПОДВАЛ -->
     <footer>
