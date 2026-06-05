@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Портфолио - Екатерина Б.</title>
     <style>
-        /* ВСЕ СТИЛИ CSS ТОЛЬКО ЗДЕСЬ, ВНУТРИ ТЕГА STYLE */
         * {
             margin: 0;
             padding: 0;
@@ -23,7 +22,23 @@
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
             text-align: center;
-            padding: 60px 20px;
+            padding: 60px 20px 40px 20px;
+        }
+
+        /* Стили для фото */
+        .avatar {
+            text-align: center;
+            margin-top: -50px;
+            margin-bottom: 20px;
+        }
+
+        .avatar img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid white;
+            object-fit: cover;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
         }
 
         header h1 {
@@ -109,10 +124,16 @@
             header h1 { font-size: 32px; }
             section h2 { font-size: 24px; }
             section { margin: 20px; }
+            .avatar img { width: 100px; height: 100px; }
         }
     </style>
 </head>
 <body>
+
+    <!-- ФОТО (ДОБАВЛЕНО ОБРАТНО) -->
+    <div class="avatar">
+        <img src="фото.jpg" alt="Екатерина Б.">
+    </div>
 
     <!-- ШАПКА САЙТА -->
     <header>
